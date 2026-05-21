@@ -59,3 +59,45 @@ console.log("!b2", !b2); // true (NOT 연산자, b2가 false이므로 !b2는 tru
 //&& || 단축 평가
 //&& -> 첫 번째 피연산자가 falsy이면 그 값을 반환, 그렇지 않으면 두 번째 피연산자를 반환
 //|| -> 첫 번째 피연산자가 truthy이면 그 값을 반환, 그렇지 않으면 두 번째 피연산자를 반환
+console.log("---------------");
+//증감 연산자
+let count = 0;
+console.log("count", count); // 0
+
+count++; // count = count + 1
+console.log("count", count); // 1
+
+count--; // count = count - 1
+console.log("count", count); // 0
+
+//전위 연산자 -> ++count, --count
+//후위 연산자 -> count++, count--
+let num = 5;
+console.log("num", num); // 5
+
+console.log("num++", num++); // 5 (후위 연산자, 현재 값을 반환한 후 증가)
+console.log("num", num); // 6
+
+console.log("++num", ++num); // 7 (전위 연산자, 먼저 증가한 후 값을 반환)
+console.log("num", num); // 7
+console.log("---------------");
+
+//삼항 연산자
+//조건 ? 참일 때의 값 : 거짓일 때의 값
+const age = 20;
+const isAdult = age >= 18 ? "성인" : "미성년자";
+console.log("isAdult", isAdult); // "성인"
+
+//비트 연산자
+//비트 단위로 연산을 수행하는 연산자
+//&(AND), |(OR), ^(XOR), ~(NOT), <<(왼쪽 시프트), >>(오른쪽 시프트)
+console.log("---------------");
+const c1 = 5; // 0101 (2진수)
+const c2 = 3; // 0011 (2진수)
+
+console.log("c1 & c2", c1 & c2); // 1 (비트 단위 AND 연산)
+console.log("c1 | c2", c1 | c2); // 7 (비트 단위 OR 연산)
+console.log("c1 ^ c2", c1 ^ c2); // 6 (비트 단위 XOR 연산)
+console.log("~c1", ~c1); // -6 (비트 단위 NOT 연산)
+console.log("c1 << 1", c1 << 1); // 10 (왼쪽 시프트)
+console.log("c1 >> 1", c1 >> 1); // 2 (오른쪽 시프트)
