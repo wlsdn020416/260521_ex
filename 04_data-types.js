@@ -31,8 +31,18 @@ console.log(typeof u2); // undefined
 let u3 = {};
 console.log(typeof u3.u3); // undefined -> 객체의 프로퍼티가 존재하지 않는 경우에도 undefined
 
-//object -> 객체, 배열, 함수 등등
+//6. object -> 객체, 배열, 함수 등등
 const o = {};
 console.log(typeof o);
 const a = [];
 console.log(typeof a);
+
+//템플릿 리터럴
+const name = "홍길동";
+const age = 30;
+console.log(`제 이름은 ${name}입니다. 나이는 ${age}살입니다.`);
+console.log(`시작
+
+    엔터가 있으면 그대로 출력 
+
+끝`)
