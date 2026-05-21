@@ -7,3 +7,10 @@ foo = 1;
 console.log(foo);
 let bar = 10;
 console.log(bar);
+const a = 111;
+console.log(a);
+// a = 222; // const 변수는 재할당이 불가능하다. (상수)
+
+// var(함수 스코프) <-> let, const(블록 스코프)
+// v = 1000;
+// var b = 222;
